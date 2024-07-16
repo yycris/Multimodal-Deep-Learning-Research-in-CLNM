@@ -30,3 +30,5 @@ The training of the model is divided into two stages: stage 1 and stage 2.
 `$ python predict_dsaf.py` 
 ### 5.Comparison of DSAF with machine learning models
 * The `$ machine_learning.py` file provides code for SVM, RF, GBDT, and XGBoost to predict CLNM. You can run this file to obtain prediction results.
+### 6.run tensorboard
+`$ tensorboard --logdir=./logs/
