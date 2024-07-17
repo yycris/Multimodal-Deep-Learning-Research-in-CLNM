@@ -81,7 +81,7 @@ def main():
             predict = torch.softmax(output, dim=0)
             output = predict[1]
             predict = predict[1]
-            threshold = 0.454
+            threshold = 0.47
             output = torch.where(output >= threshold, torch.ones_like(output), output)
             output = torch.where(output < threshold, torch.zeros_like(output), output)
             predict_class = output.cpu().numpy()
