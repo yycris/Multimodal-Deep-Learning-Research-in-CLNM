@@ -59,7 +59,7 @@ def main():
     predict_cla = []
     test_label = []
 
-    model_weight_path = f""
+    model_weight_path = ""
     net.load_state_dict(torch.load(model_weight_path, map_location=device))
     net.eval()
     with torch.no_grad():
