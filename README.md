@@ -9,7 +9,7 @@ Prediction of central lymph node metastasis in papillary thyroid carcinoma using
 * Tumor ultrasound images, C6 level CT images, and clinical information in 611 patients with PTC.  
 * **PS:** The data **cannot be shared publicly** due to the privacy of individuals that participated in the study and because the data is intended for future research purposes.
 ### 2.Train the SCLResNet101
-The training of the model is divided into two stages: stage 1 and stage 2.  
+The training of the model is divided into two stages: **stage 1** and **stage 2**.  
 #### Stage1
 * You need to train the stage1 with the following commands:  
 `$ python train_sclresnet101_stage1.py`  
