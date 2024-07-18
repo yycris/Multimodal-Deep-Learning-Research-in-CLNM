@@ -32,7 +32,7 @@ classifier = SVC(C=0.002, kernel='linear', gamma='scale', class_weight=None,prob
 classifier.fit(train_data, train_label)
 y_pred = classifier.predict(test_data)
 y_proba = classifier.predict_proba(test_data)
-threshold = 0.59
+threshold = 0.47
 y_pred = np.where(y_proba[:,1] > threshold, 1, 0).astype(np.uint8)
 
 matrix = skl.metrics.confusion_matrix(test_label, y_pred,labels=[0, 1])
